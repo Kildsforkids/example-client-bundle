@@ -1,0 +1,29 @@
+{
+    "name": "kildsforkids/example-client-bundle",
+    "version": "0.1.0",
+    "type": "symfony-bundle",
+    "description": "Http-client for comments service example.com",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.4",
+        "symfony/framework-bundle": "^5.4",
+        "symfony/http-client": "^5.4",
+        "symfony/yaml": "^5.4"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Kildsforkids\\ExampleClientBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kildsforkids\\ExampleClientBundle\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^6.2"
+    }
+}
